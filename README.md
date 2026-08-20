@@ -1,1 +1,2 @@
 # projeto-integrador-frontend-Glauco
+Este projeto consiste em um portal web intuitivo que mapeia os melhores pontos turísticos da região, permitindo que os usuários descubram destinos ideais com total facilidade. O site centraliza fotos de alta qualidade e vídeos imersivos de cada local, ajudando na escolha do próximo passeio de forma visualmente atraente. Além disso, a plataforma exibe de forma integrada os melhores restaurantes e opções gastronômicas nas proximidades, facilitando o planejamento completo do roteiro em um só lugar.
