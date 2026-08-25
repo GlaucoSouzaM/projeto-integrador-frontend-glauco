@@ -6,55 +6,151 @@
     <title>Guia turístico</title>
 </head>
 <body>
-    <h1>Explore o Melhor da Nossa Região</h1>
-    <ul>
-        <li>Pontos Turísticos</li>
-        <li>Restaurantes Próximos</li>
-        <li>Galeria de Fotos</li>
-    </ul>
-<section class="destaques">
-    <h2>Principais Destaques de João Pessoa</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Lugar</th>
-                <th>Atração Principal</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>Farol do Cabo Branco</strong></td>
-                <td>Localizado na Ponta do Seixas, o ponto mais oriental das Américas, com vista panorâmica do oceano.</td>
-            </tr>
-            <tr>
-                <td><strong>Centro Cultural São Francisco</strong></td>
-                <td>>Complexo arquitetônico barroco barroco do século XVI, rico em arte sacra e história colonial.</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="link-externo">
-        <p>Quer descobrir mais destinos? Acesse o 
-            <a href="https://www.gov.br" target="_blank" rel="noopener noreferrer">
-                Portal Oficial de Turismo
-            </a> 
-            para planejar seu roteiro.
-        </p>
-    </div>
-</section>
-<section class="fotos">
-    <h2>Galeria de Fotos</h2>
-    <div class="fotos-container">
-        <h3>Farol do Cabo Branco</h3>
-        <img src="assets\images\Farol do Cabo Branco.jpg" 
-             alt="Farol do Cabo Branco" 
-             width="500">
-    </div>
-    <div class="fotos-container">
-        <h3>Gastronomia Paraibana</h3>
-        <img src="assets\images\Mangai.jpg" 
-             alt="Mesa farta em um restaurante regional de João Pessoa com pratos típicos nordestinos, como carne de sol com macaxeira, arroz de queijo coalho e feijão verde." 
-             width="500">
-    </div>
-</section>
+
+    <header>
+        <h1>Explore o Melhor da Nossa Região</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#destaques">Pontos Turísticos</a></li>
+                <li><a href="#avaliacao">Deixe sua Avaliação</a></li>
+                <li><a href="#fotos">Galeria de Fotos</a></li>
+            </ul>
+        </nav>
+
+        <div class="alerta" role="alert">
+            <p>Bem-vindo! Confira as novidades da nossa temporada de verão.</p>
+            <button type="button" class="fechar-alerta" aria-label="Fechar alerta">&times;</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="destaques" id="destaques">
+            <h2>Principais Destaques de João Pessoa</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lugar</th>
+                        <th>Atração Principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Farol do Cabo Branco</strong></td>
+                        <td>Localizado na Ponta do Seixas, o ponto mais oriental das Américas, com vista panorâmica do oceano.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Centro Cultural São Francisco</strong></td>
+                        <td>Complexo arquitetônico barroco do século XVI, rico em arte sacra e história colonial.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Quer descobrir mais destinos? Acesse o
+                <a href="https://www.gov.br" target="_blank" rel="noopener noreferrer">
+                    Portal Oficial de Turismo
+                </a>
+                para planejar seu roteiro.
+            </p>
+        </section>
+
+        <section class="avaliacao" id="avaliacao">
+            <h2>Deixe sua Avaliação</h2>
+
+            <form novalidate>
+                <fieldset>
+                    <legend>Seus Dados</legend>
+
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="data-visita">Data da visita</label>
+                        <input type="date" id="data-visita" name="data-visita" max="2026-08-25">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sua Experiência</legend>
+
+                    <div class="campo">
+                        <label for="ponto-turistico">Ponto turístico avaliado</label>
+                        <select id="ponto-turistico" name="ponto-turistico" required>
+                            <option value="">Selecione...</option>
+                            <option value="farol">Farol do Cabo Branco</option>
+                            <option value="centro-cultural">Centro Cultural São Francisco</option>
+                            <option value="gastronomia">Gastronomia Paraibana</option>
+                            <option value="praia">Praias da Região</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <span id="nota-label">Nota geral</span>
+                        <div role="group" aria-labelledby="nota-label">
+                            <input type="radio" id="nota-1" name="nota" value="1">
+                            <label for="nota-1">1</label>
+
+                            <input type="radio" id="nota-2" name="nota" value="2">
+                            <label for="nota-2">2</label>
+
+                            <input type="radio" id="nota-3" name="nota" value="3" checked>
+                            <label for="nota-3">3</label>
+
+                            <input type="radio" id="nota-4" name="nota" value="4">
+                            <label for="nota-4">4</label>
+
+                            <input type="radio" id="nota-5" name="nota" value="5">
+                            <label for="nota-5">5</label>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="comentario">Comentário</label>
+                        <textarea id="comentario" name="comentario" rows="4"
+                                  minlength="10" maxlength="500" required></textarea>
+                    </div>
+
+                    <div class="campo">
+                        <label for="recomendaria">Nota de 0 a 10 (o quanto você recomendaria)</label>
+                        <input type="number" id="recomendaria" name="recomendaria" min="0" max="10" value="10">
+                    </div>
+                </fieldset>
+
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+        </section>
+
+        <section class="fotos" id="fotos">
+            <h2>Galeria de Fotos</h2>
+
+            <div class="fotos-container">
+                <h3>Farol do Cabo Branco</h3>
+                <img src="assets/images/Farol do Cabo Branco.jpg"
+                     alt="Farol do Cabo Branco"
+                     width="500">
+            </div>
+
+            <div class="fotos-container">
+                <h3>Gastronomia Paraibana</h3>
+                <img src="assets/images/Mangai.jpg"
+                     alt="Mesa farta em um restaurante regional de João Pessoa com pratos típicos nordestinos, como carne de sol com macaxeira, arroz de queijo coalho e feijão verde."
+                     width="500">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Guia Turístico de João Pessoa. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
