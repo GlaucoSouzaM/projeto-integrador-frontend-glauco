@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Guia turístico de João Pessoa, com informações sobre pontos turísticos, avaliações e galeria de fotos.">
+    <meta name="keywords" content="João Pessoa, turismo, pontos turísticos, avaliações, galeria de fotos">
     <title>Guia turístico</title>
 </head>
+
 <body>
 
     <header>
@@ -38,7 +43,8 @@
                 <tbody>
                     <tr>
                         <td><strong>Farol do Cabo Branco</strong></td>
-                        <td>Localizado na Ponta do Seixas, o ponto mais oriental das Américas, com vista panorâmica do oceano.</td>
+                        <td>Localizado na Ponta do Seixas, o ponto mais oriental das Américas, com vista panorâmica do
+                            oceano.</td>
                     </tr>
                     <tr>
                         <td><strong>Centro Cultural São Francisco</strong></td>
@@ -58,7 +64,7 @@
         <section class="avaliacao" id="avaliacao">
             <h2>Deixe sua Avaliação</h2>
 
-            <form novalidate>
+            <form>
                 <fieldset>
                     <legend>Seus Dados</legend>
 
@@ -114,8 +120,8 @@
 
                     <div class="campo">
                         <label for="comentario">Comentário</label>
-                        <textarea id="comentario" name="comentario" rows="4"
-                                  minlength="10" maxlength="500" required></textarea>
+                        <textarea id="comentario" name="comentario" rows="4" minlength="10" maxlength="500"
+                            required></textarea>
                     </div>
 
                     <div class="campo">
@@ -133,18 +139,25 @@
 
             <div class="fotos-container">
                 <h3>Farol do Cabo Branco</h3>
-                <img src="assets/images/Farol do Cabo Branco.jpg"
-                     alt="Farol do Cabo Branco"
-                     width="500">
+                <img src="assets/images/Farol do Cabo Branco.jpg" alt="Farol do Cabo Branco" width="500">
             </div>
 
             <div class="fotos-container">
                 <h3>Restaurante Mangai</h3>
                 <img src="assets/images/Mangai.jpg"
-                     alt="Mesa farta em um restaurante regional de João Pessoa com pratos típicos nordestinos, como carne de sol com macaxeira, arroz de queijo coalho e feijão verde."
-                     width="500">
+                    alt="Mesa farta em um restaurante regional de João Pessoa com pratos típicos nordestinos, como carne de sol com macaxeira, arroz de queijo coalho e feijão verde."
+                    width="500">
             </div>
         </section>
+        <section class="videos">
+            <video controls width="640" poster="capa.jpg">
+                <source src="./assets/videos/vdcabobranco.mp4" type="video/mp4">
+                <source src="./assets/videos/vdcabobranco.webm" type="video/webm">
+                <source src="./assets/videos/vdcabobranco.ogg" type="video/ogg">
+                Seu navegador não suporta vídeo HTML5.
+            </video>
+
+
 
     </main>
 
@@ -153,4 +166,5 @@
     </footer>
 
 </body>
+
 </html>
