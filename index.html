@@ -20,13 +20,11 @@
                 <li><a href="#destaques">Pontos Turísticos</a></li>
                 <li><a href="#avaliacao">Deixe sua Avaliação</a></li>
                 <li><a href="#fotos">Galeria de Fotos</a></li>
+                <li><a href="#videos">Galeria de Vídeos</a></li>
             </ul>
         </nav>
 
-        <div class="alerta" role="alert">
-            <p>Bem-vindo! Confira as novidades da nossa temporada de verão.</p>
-            <button type="button" class="fechar-alerta" aria-label="Fechar alerta">&times;</button>
-        </div>
+
     </header>
 
     <main>
@@ -149,14 +147,16 @@
                     width="500">
             </div>
         </section>
-        <section class="videos">
-            <h1>Galeria de video</h1>
-            <video controls width="400" poster="capa.jpg">
-                <source src="./assets/videos/vdcabobranco.mp4" type="video/mp4">
+         <section class="videos" id="videos">
+            <h2>Galeria de videos</h2>
+            <video controls width="400" poster="./assets/images/posterfaroldocabobranco.jpg" preload="none">
                 <source src="./assets/videos/vdcabobranco.webm" type="video/webm">
+                <source src="./assets/videos/vdcabobranco.mp4" type="video/mp4">
                 <source src="./assets/videos/vdcabobranco.ogg" type="video/ogg">
+                <track src="./assets/videos/vdcabobranco.vtt.txt" kind="captions" srclang="pt-br" label="Português" default>
                 Seu navegador não suporta vídeo HTML5.
             </video>
+        </section>
 
 
 
