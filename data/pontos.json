@@ -1,109 +1,389 @@
-[
-    {
-        "id": "farol",
-        "nome": "Farol do Cabo Branco",
-        "categoria": "Natureza",
-        "bairro": "Cabo Branco",
-        "descricao": "Localizado na Ponta do Seixas, o ponto mais oriental das Américas, com vista panorâmica do oceano. Inaugurado em 1972, tem formato triangular estilizado que simboliza uma planta de sisal, uma das forças econômicas históricas da região.",
-        "imagem": "assets/images/Farol do Cabo Branco.jpg",
-        "imagemAlt": "Farol do Cabo Branco",
-        "video": {
-            "poster": "assets/images/posterfaroldocabobranco.jpg",
-            "legenda": "assets/videos/vdcabobranco.vtt",
-            "fontes": [
-                {
-                    "src": "assets/videos/vdcabobranco.webm",
-                    "tipo": "video/webm"
-                },
-                {
-                    "src": "assets/videos/vdcabobranco.mp4",
-                    "tipo": "video/mp4"
-                },
-                {
-                    "src": "assets/videos/vdcabobranco.ogg",
-                    "tipo": "video/ogg"
-                }
-            ]
+    [
+        {
+            "id": "farol",
+            "nome": "Farol do Cabo Branco",
+            "categoria": "Natureza",
+            "bairro": "Cabo Branco",
+            "descricao": "Localizado na Ponta do Seixas, o ponto mais oriental das Américas, com vista panorâmica do oceano. Inaugurado em 1972, tem formato triangular estilizado que simboliza uma planta de sisal, uma das forças econômicas históricas da região.",
+            "imagem": "assets/images/Farol do Cabo Branco.jpg",
+            "imagemAlt": "Farol do Cabo Branco",
+            "video": {
+                "poster": "assets/images/posterfaroldocabobranco.jpg",
+                "legenda": "assets/videos/vdcabobranco.vtt",
+                "fontes": [
+                    {
+                        "src": "assets/videos/vdcabobranco.webm",
+                        "tipo": "video/webm"
+                    },
+                    {
+                        "src": "assets/videos/vdcabobranco.mp4",
+                        "tipo": "video/mp4"
+                    },
+                    {
+                        "src": "assets/videos/vdcabobranco.ogg",
+                        "tipo": "video/ogg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "centro-cultural",
+            "nome": "Centro Cultural São Francisco",
+            "categoria": "Histórico",
+            "bairro": "Centro",
+            "descricao": "Complexo arquitetônico barroco do século XVI, rico em arte sacra e história colonial. Fundado originalmente como Convento de Santo Antônio, preserva azulejos portugueses e talhas douradas.",
+            "imagem": "assets/images/Centro Cultural São Francisco.jpg",
+            "imagemAlt": "Centro Cultural São Francisco, em João Pessoa.",
+            "video": null
+        },
+        {
+            "id": "restaurante-mangai",
+            "nome": "Restaurante Mangai",
+            "categoria": "Gastronomia",
+            "bairro": "Manaíra",
+            "descricao": "Uma das maiores referências da culinária nordestina no Brasil, com enorme variedade de pratos típicos servidos em bufê por quilo, garçons vestidos a caráter e ambiente rústico e acolhedor.",
+            "imagem": "assets/images/Mangai.jpg",
+            "imagemAlt": "Mesa farta em um restaurante regional de João Pessoa com pratos típicos nordestinos, como carne de sol com macaxeira, arroz de queijo coalho e feijão verde.",
+            "video": null
+        },
+        {
+            "id": "praca-antenor-navarro",
+            "nome": "Praça Antenor Navarro",
+            "categoria": "Histórico",
+            "bairro": "Varadouro",
+            "descricao": "Coração do Centro Histórico, com um conjunto de casarões antigos e igrejas, próximo ao tradicional Hotel Globo e à Casa da Pólvora.",
+            "imagem": "assets/images/praca-antenor-navarro.jpg",
+            "imagemAlt": "Praça Antenor Navarro",
+            "video": null
+        },
+        {
+            "id": "letreiro-tambau",
+            "nome": "Letreiro João Pessoa (Tambaú)",
+            "categoria": "Praia",
+            "bairro": "Tambaú",
+            "descricao": "Um dos pontos preferidos para fotos na orla, perto da Feirinha de Artesanato de Tambaú.",
+            "imagem": "assets/images/letreiro-tambau.jpg",
+            "imagemAlt": "Letreiro João Pessoa em Tambaú",
+            "video": null
+        },
+        {
+            "id": "piscinas-seixas",
+            "nome": "Piscinas Naturais do Seixas",
+            "categoria": "Praia",
+            "bairro": "Cabo Branco",
+            "descricao": "Piscinas formadas por recifes, visitáveis apenas na maré baixa, com águas calmas e esverdeadas ideais para snorkel.",
+            "imagem": "assets/images/piscinas-seixas.jpg",
+            "imagemAlt": "Piscinas Naturais do Seixas",
+            "video": null
+        },
+        {
+            "id": "estacao-cabo-branco",
+            "nome": "Estação Cabo Branco",
+            "categoria": "Cultura",
+            "bairro": "Cabo Branco",
+            "descricao": "Centro de Ciência, Cultura e Artes localizado bem perto do Farol, com exposições e vista para o mar.",
+            "imagem": "assets/images/estacao-cabo-branco.jpg",
+            "imagemAlt": "Estação Cabo Branco",
+            "video": null
+        },
+        {
+            "id": "parque-solon-lucena",
+            "nome": "Parque Sólon de Lucena",
+            "categoria": "Natureza",
+            "bairro": "Centro",
+            "descricao": "Espaço verde no centro da cidade, também conhecido como Parque da Lagoa, com pista de caminhada, ciclovia e área de lazer para toda a família.",
+            "imagem": "assets/images/parque-solon-lucena.jpg",
+            "imagemAlt": "Parque Sólon de Lucena",
+            "video": null
+        },
+        {
+            "id": "praia-tambaba",
+            "nome": "Praia de Tambaba",
+            "categoria": "Praia",
+            "bairro": "Conde (região metropolitana)",
+            "descricao": "Uma das praias mais procuradas da Costa do Conde, cercada por falésias e conhecida por sua beleza natural.",
+            "imagem": "assets/images/praia-tambaba.jpg",
+            "imagemAlt": "Praia de Tambaba",
+            "video": null
+        },
+        {
+            "id": "praia-cabo-branco",
+            "nome": "Praia do Cabo Branco",
+            "categoria": "Praia",
+            "bairro": "Cabo Branco",
+            "descricao": "Praia urbana com águas mornas, extensa faixa de areia e calçadão movimentado, ideal para caminhadas, ciclismo ao amanhecer e banho de mar.",
+            "imagem": "assets/images/praia-cabo-branco.jpg",
+            "imagemAlt": "Praia do Cabo Branco",
+            "video": null
+        },
+        {
+            "id": "casa-jose-americo",
+            "nome": "Fundação Casa de José Américo",
+            "categoria": "Cultura",
+            "bairro": "Cabo Branco",
+            "descricao": "Antiga residência do escritor e político paraibano José Américo de Almeida, transformada em museu e centro de pesquisa à beira-mar do Cabo Branco.",
+            "imagem": "assets/images/casa-jose-americo.jpg",
+            "imagemAlt": "Fundação Casa de José Américo",
+            "video": null
+        },
+        {
+            "id": "teatro-santa-roza",
+            "nome": "Teatro Santa Roza",
+            "categoria": "Cultura",
+            "bairro": "Centro",
+            "descricao": "Inaugurado em 1889, é um dos teatros mais antigos do Brasil, com arquitetura greco-romana e programação cultural variada no coração da cidade.",
+            "imagem": "assets/images/teatro-santa-roza.jpg",
+            "imagemAlt": "Fachada histórica do Teatro Santa Roza",
+            "video": null
+        },
+        {
+            "id": "mosteiro-sao-bento",
+            "nome": "Mosteiro de São Bento",
+            "categoria": "Histórico",
+            "bairro": "Centro",
+            "descricao": "Conjunto arquitetônico beneditino construído a partir do século XVI, considerado um dos monumentos históricos mais importantes do Brasil colonial.",
+            "imagem": "assets/images/mosteiro-sao-bento.jpg",
+            "imagemAlt": "Mosteiro de São Bento em João Pessoa",
+            "video": null
+        },
+        {
+            "id": "catedral-nossa-senhora-neves",
+            "nome": "Catedral Basílica de Nossa Senhora das Neves",
+            "categoria": "Histórico",
+            "bairro": "Centro",
+            "descricao": "Principal templo católico da Paraíba, erguido no ponto alto onde a cidade nasceu em 1585, em homenagem à padroeira de João Pessoa.",
+            "imagem": "assets/images/catedral-nossa-senhora-neves.jpg",
+            "imagemAlt": "Catedral Basílica de Nossa Senhora das Neves",
+            "video": null
+        },
+        {
+            "id": "praia-manaira",
+            "nome": "Praia de Manaíra",
+            "categoria": "Praia",
+            "bairro": "Manaíra",
+            "descricao": "Praia urbana bastante frequentada para caminhadas no calçadão, passeios de bicicleta e prática de esportes ao ar livre com vista para o mar.",
+            "imagem": "assets/images/praia-manaira.jpg",
+            "imagemAlt": "Praia de Manaíra",
+            "video": null
+        },
+        {
+            "id": "nau-frutos-do-mar",
+            "nome": "Nau Frutos do Mar",
+            "categoria": "Gastronomia",
+            "bairro": "Manaíra",
+            "descricao": "Restaurante tradicional de João Pessoa especializado em frutos do mar e pratos com toque regional em ambiente sofisticado.",
+            "imagem": "assets/images/nau-frutos-do-mar.jpg",
+            "imagemAlt": "Restaurante Nau Frutos do Mar em Manaíra",
+            "video": null
+        },
+        {
+            "id": "orla-manaira",
+            "nome": "Calçadão da Orla de Manaíra",
+            "categoria": "Natureza",
+            "bairro": "Manaíra",
+            "descricao": "Ponto de encontro à beira-mar com ciclovia, quiosques e vista privilegiada da costa urbana de João Pessoa.",
+            "imagem": "assets/images/orla-manaira.jpg",
+            "imagemAlt": "Calçadão da Orla de Manaíra",
+            "video": null
+        },
+        {
+            "id": "hotel-globo",
+            "nome": "Hotel Globo",
+            "categoria": "Histórico",
+            "bairro": "Varadouro",
+            "descricao": "Antigo hotel de luxo da década de 1920 em estilo eclético, famoso por sua vista panorâmica para o pôr do sol sobre o Rio Sanhauá.",
+            "imagem": "assets/images/hotel-globo.jpg",
+            "imagemAlt": "Hotel Globo no Centro Histórico",
+            "video": null
+        },
+        {
+            "id": "casa-da-polvora",
+            "nome": "Casa da Pólvora",
+            "categoria": "Histórico",
+            "bairro": "Varadouro",
+            "descricao": "Construída em 1710 para armazenar armamentos da capitania, hoje funciona como espaço cultural e mirante histórico na Ladeira de São Francisco.",
+            "imagem": "assets/images/casa-da-polvora.jpg",
+            "imagemAlt": "Casa da Pólvora em João Pessoa",
+            "video": null
+        },
+        {
+            "id": "porto-do-capim",
+            "nome": "Porto do Capim",
+            "categoria": "Cultura",
+            "bairro": "Varadouro",
+            "descricao": "Berço histórico da fundação da cidade às margens do Rio Sanhauá, marcado pela tradição ribeirinha e manifestações culturais locais.",
+            "imagem": "assets/images/porto-do-capim.jpg",
+            "imagemAlt": "Porto do Capim às margens do Rio Sanhauá",
+            "video": null
+        },
+        {
+            "id": "praia-tambau",
+            "nome": "Praia de Tambaú",
+            "categoria": "Praia",
+            "bairro": "Tambaú",
+            "descricao": "Uma das praias mais movimentadas da capital, com águas calmas, quiosques, estrutura hoteleira e ponto de partida para passeios de barco.",
+            "imagem": "assets/images/praia-tambau.jpg",
+            "imagemAlt": "Praia de Tambaú",
+            "video": null
+        },
+        {
+            "id": "feirinha-tambau",
+            "nome": "Feirinha de Artesanato de Tambaú",
+            "categoria": "Cultura",
+            "bairro": "Tambaú",
+            "descricao": "Espaço tradicional à beira-mar que reúne dezenas de boxes de artesanato regional, rendas, lembranças e gastronomia típica paraibana.",
+            "imagem": "assets/images/feirinha-tambau.jpg",
+            "imagemAlt": "Feirinha de Artesanato de Tambaú",
+            "video": null
+        },
+        {
+            "id": "piscinas-picaozinho",
+            "nome": "Piscinas Naturais de Picãozinho",
+            "categoria": "Praia",
+            "bairro": "Tambaú",
+            "descricao": "Formação de recifes de corais a cerca de 1,5 km da costa de Tambaú, acessível de catamarã na maré baixa para observar peixes coloridos.",
+            "imagem": "assets/images/piscinas-picaozinho.jpg",
+            "imagemAlt": "Piscinas Naturais de Picãozinho",
+            "video": null
+        },
+        {
+            "id": "mercado-artesanato-paraibano",
+            "nome": "Mercado de Artesanato Paraibano (MAP)",
+            "categoria": "Cultura",
+            "bairro": "Tambaú",
+            "descricao": "Centro comercial com mais de cem lojas dedicadas à produção artesanal da Paraíba, incluindo algodão colorido, cerâmica, couro e cordel.",
+            "imagem": "assets/images/mercado-artesanato-paraibano.jpg",
+            "imagemAlt": "Mercado de Artesanato Paraibano em Tambaú",
+            "video": null
+        },
+        {
+            "id": "praia-coqueirinho",
+            "nome": "Praia de Coqueirinho",
+            "categoria": "Praia",
+            "bairro": "Conde (região metropolitana)",
+            "descricao": "Enseada cercada por coqueirais, falésias coloridas e águas mornas e tranquilas, considerada uma das praias mais bonitas do litoral sul.",
+            "imagem": "assets/images/praia-coqueirinho.jpg",
+            "imagemAlt": "Praia de Coqueirinho no Conde",
+            "video": null
+        },
+        {
+            "id": "praia-bela",
+            "nome": "Praia Bela",
+            "categoria": "Praia",
+            "bairro": "Conde (região metropolitana)",
+            "descricao": "Famosa pelo encontro do rio com o mar, formando uma grande lagoa de água doce ao lado das ondas do oceano, ideal para famílias.",
+            "imagem": "assets/images/praia-bela.jpg",
+            "imagemAlt": "Encontro do rio com o mar em Praia Bela",
+            "video": null
+        },
+        {
+            "id": "mirante-dedo-de-deus",
+            "nome": "Mirante Dedo de Deus",
+            "categoria": "Natureza",
+            "bairro": "Conde (região metropolitana)",
+            "descricao": "Mirante natural no topo das falésias com vista panorâmica espetacular para a Praia de Coqueirinho e os cânions coloridos da região.",
+            "imagem": "assets/images/mirante-dedo-de-deus.jpg",
+            "imagemAlt": "Vista do Mirante Dedo de Deus",
+            "video": null
+        },
+        {
+            "id": "praia-do-bessa",
+            "nome": "Praia do Bessa (Caribessa)",
+            "categoria": "Praia",
+            "bairro": "Bessa",
+            "descricao": "Trecho de mar calmo, morno e de águas esverdeadas protegido por recifes, muito procurado para passeios de caiaque e stand-up paddle.",
+            "imagem": "assets/images/praia-do-bessa.jpg",
+            "imagemAlt": "Praia do Bessa em João Pessoa",
+            "video": null
+        },
+        {
+            "id": "parque-parahyba",
+            "nome": "Parque Parahyba",
+            "categoria": "Natureza",
+            "bairro": "Bessa",
+            "descricao": "Amplo complexo de praças lineares com ciclovias, quadras esportivas, espaço pet, áreas verdes e eventos culturais ao ar livre.",
+            "imagem": "assets/images/parque-parahyba.jpg",
+            "imagemAlt": "Parque Parahyba no bairro do Bessa",
+            "video": null
+        },
+        {
+            "id": "praia-da-penha",
+            "nome": "Praia da Penha",
+            "categoria": "Praia",
+            "bairro": "Penha",
+            "descricao": "Praia tradicional do litoral sul de João Pessoa, com vila de pescadores, falésias e águas tranquilas cercadas por coqueiros.",
+            "imagem": "assets/images/praia-da-penha.jpg",
+            "imagemAlt": "Praia da Penha",
+            "video": null
+        },
+        {
+            "id": "santuario-nossa-senhora-da-penha",
+            "nome": "Santuário de Nossa Senhora da Penha",
+            "categoria": "Histórico",
+            "bairro": "Penha",
+            "descricao": "Capela histórica erguida no século XVIII no alto da falésia, ligada à praia por uma famosa escadaria e palco de uma das maiores romarias do estado.",
+            "imagem": "assets/images/santuario-nossa-senhora-da-penha.jpg",
+            "imagemAlt": "Santuário e escadaria de Nossa Senhora da Penha",
+            "video": null
+        },
+        {
+            "id": "espaco-cultural-jose-lins-do-rego",
+            "nome": "Espaço Cultural José Lins do Rego",
+            "categoria": "Cultura",
+            "bairro": "Tambauzinho",
+            "descricao": "Maior complexo cultural da Paraíba, projetado por Sérgio Bernardes, reunindo planetário, museu, teatro de arena, cinema e galerias de arte.",
+            "imagem": "assets/images/espaco-cultural-jose-lins-do-rego.jpg",
+            "imagemAlt": "Espaço Cultural José Lins do Rego",
+            "video": null
+        },
+        {
+            "id": "parque-arruda-camara-bica",
+            "nome": "Parque Zoobotânico Arruda Câmara (Bica)",
+            "categoria": "Natureza",
+            "bairro": "Róger",
+            "descricao": "Reserva ecológica de Mata Atlântica com zoológico, lagos, nascentes naturais e áreas para piquenique e caminhada.",
+            "imagem": "assets/images/parque-arruda-camara-bica.jpg",
+            "imagemAlt": "Parque Zoobotânico Arruda Câmara (Bica)",
+            "video": null
+        },
+        {
+            "id": "skybar-altiplano",
+            "nome": "Mirante Skybar (Altiplano)",
+            "categoria": "Gastronomia",
+            "bairro": "Altiplano",
+            "descricao": "Mirante e espaço gastronômico no ponto mais alto de João Pessoa, com vista panorâmica de 360 graus para o mar e o pôr do sol da cidade.",
+            "imagem": "assets/images/skybar-altiplano.jpg",
+            "imagemAlt": "Vista panorâmica a partir do Altiplano",
+            "video": null
+        },
+        {
+            "id": "por-do-sol-jacare",
+            "nome": "Pôr do Sol na Praia do Jacaré",
+            "categoria": "Natureza",
+            "bairro": "Cabedelo (região metropolitana)",
+            "descricao": "Espetáculo diário às margens do Rio Paraíba, celebrado ao som do Bolero de Ravel no saxofone, com bares, catamarãs e feirinha de artesanato.",
+            "imagem": "assets/images/por-do-sol-jacare.jpg",
+            "imagemAlt": "Pôr do sol na Praia do Jacaré",
+            "video": null
+        },
+        {
+            "id": "ilha-areia-vermelha",
+            "nome": "Ilha de Areia Vermelha",
+            "categoria": "Praia",
+            "bairro": "Cabedelo (região metropolitana)",
+            "descricao": "Parque Estadual Marinho formado por um grande banco de areia avermelhada que surge na maré baixa a cerca de 1,5 km da costa, cercado por piscinas naturais.",
+            "imagem": "assets/images/ilha-areia-vermelha.jpg",
+            "imagemAlt": "Ilha de Areia Vermelha na maré baixa",
+            "video": null
+        },
+        {
+            "id": "fortaleza-santa-catarina",
+            "nome": "Fortaleza de Santa Catarina",
+            "categoria": "Histórico",
+            "bairro": "Cabedelo (região metropolitana)",
+            "descricao": "Monumento militar construído no final do século XVI na foz do Rio Paraíba para defender a costa contra invasões francesas e holandesas.",
+            "imagem": "assets/images/fortaleza-santa-catarina.jpg",
+            "imagemAlt": "Fortaleza de Santa Catarina em Cabedelo",
+            "video": null
         }
-    },
-    {
-        "id": "centro-cultural",
-        "nome": "Centro Cultural São Francisco",
-        "categoria": "Histórico",
-        "bairro": "Centro",
-        "descricao": "Complexo arquitetônico barroco do século XVI, rico em arte sacra e história colonial. Fundado originalmente como Convento de Santo Antônio, preserva azulejos portugueses e talhas douradas.",
-        "imagem": "assets/images/Centro Cultural São Francisco.jpg",
-        "imagemAlt": "Centro Cultural São Francisco, em João Pessoa.",
-        "video": null
-    },
-    {
-        "id": "restaurante-mangai",
-        "nome": "Restaurante Mangai",
-        "categoria": "Gastronomia",
-        "bairro": "Manaíra",
-        "descricao": "Uma das maiores referências da culinária nordestina no Brasil, com enorme variedade de pratos típicos servidos em bufê por quilo, garçons vestidos a caráter e ambiente rústico e acolhedor.",
-        "imagem": "assets/images/Mangai.jpg",
-        "imagemAlt": "Mesa farta em um restaurante regional de João Pessoa com pratos típicos nordestinos, como carne de sol com macaxeira, arroz de queijo coalho e feijão verde.",
-        "video": null
-    },
-    {
-        "id": "praca-antenor-navarro",
-        "nome": "Praça Antenor Navarro",
-        "categoria": "Histórico",
-        "bairro": "Varadouro",
-        "descricao": "Coração do Centro Histórico, com um conjunto de casarões antigos e igrejas, próximo ao tradicional Hotel Globo e à Casa da Pólvora.",
-        "imagem": null,
-        "imagemAlt": "Praça Antenor Navarro",
-        "video": null
-    },
-    {
-        "id": "letreiro-tambau",
-        "nome": "Letreiro João Pessoa (Tambaú)",
-        "categoria": "Praia",
-        "bairro": "Tambaú",
-        "descricao": "Um dos pontos preferidos para fotos na orla, perto da Feirinha de Artesanato de Tambaú.",
-        "imagem": null,
-        "imagemAlt": "Letreiro João Pessoa em Tambaú",
-        "video": null
-    },
-    {
-        "id": "piscinas-seixas",
-        "nome": "Piscinas Naturais do Seixas",
-        "categoria": "Praia",
-        "bairro": "Cabo Branco",
-        "descricao": "Piscinas formadas por recifes, visitáveis apenas na maré baixa, com águas calmas e esverdeadas ideais para snorkel.",
-        "imagem": null,
-        "imagemAlt": "Piscinas Naturais do Seixas",
-        "video": null
-    },
-    {
-        "id": "estacao-cabo-branco",
-        "nome": "Estação Cabo Branco",
-        "categoria": "Cultura",
-        "bairro": "Cabo Branco",
-        "descricao": "Centro de Ciência, Cultura e Artes localizado bem perto do Farol, com exposições e vista para o mar.",
-        "imagem": null,
-        "imagemAlt": "Estação Cabo Branco",
-        "video": null
-    },
-    {
-        "id": "parque-solon-lucena",
-        "nome": "Parque Sólon de Lucena",
-        "categoria": "Natureza",
-        "bairro": "Centro",
-        "descricao": "Espaço verde no centro da cidade, também conhecido como Parque da Lagoa, com pista de caminhada, ciclovia e área de lazer para toda a família.",
-        "imagem": null,
-        "imagemAlt": "Parque Sólon de Lucena",
-        "video": null
-    },
-    {
-        "id": "praia-tambaba",
-        "nome": "Praia de Tambaba",
-        "categoria": "Praia",
-        "bairro": "Conde (região metropolitana)",
-        "descricao": "Uma das praias mais procuradas da Costa do Conde, cercada por falésias e conhecida por sua beleza natural.",
-        "imagem": null,
-        "imagemAlt": "Praia de Tambaba",
-        "video": null
-    }
-]
+    ]
