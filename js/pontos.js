@@ -152,12 +152,24 @@ function criarCard(ponto) {
 function abrirModalVideo(ponto) {
     const modal = document.getElementById('modal-video');
     const titulo = document.getElementById('modal-video-titulo');
+    const autor = document.getElementById('modal-video-autor');
     const player = document.getElementById('modal-video-player');
     const mensagemIndisponivel = document.getElementById('modal-video-indisponivel');
 
     if (!modal || !player) return;
 
     titulo.textContent = ponto.nome;
+
+    if (autor) {
+        const nomeAutor = ponto.video && ponto.video.autor ? ponto.video.autor.trim() : '';
+        if (nomeAutor) {
+            autor.textContent = nomeAutor.startsWith('@') ? nomeAutor : '@' + nomeAutor;
+            autor.hidden = false;
+        } else {
+            autor.textContent = '';
+            autor.hidden = true;
+        }
+    }
 
     if (ponto.video) {
         player.hidden = false;
@@ -286,6 +298,17 @@ if (botaoVerMais) {
     botaoVerMais.addEventListener('click', function () {
         quantidadeVisivel += INCREMENTO;
         renderizarPontos();
+    });
+}
+
+const modalVideo = document.getElementById('modal-video');
+if (modalVideo) {
+    modalVideo.addEventListener('close', function () {
+        const player = document.getElementById('modal-video-player');
+        if (player) {
+            player.pause();
+            player.currentTime = 0;
+        }
     });
 }
 
