@@ -24,3 +24,7 @@ Erros:
 - Não foi possível verificar pelo GitHub a realização do teste com canPlayType().
 - Ainda não há um Pull Request aberto correspondente a aula 4.
 - As mensagens dos commits não seguem consistentemente o padrão Conventional Commits.
+
+
+# Avaliador José Nedicio de Lacerda Neto - 11/11/2026
+É um bom projeto, com HTML semântico bem estruturado (um único <main>, formulário acessível com label/fieldset e required), CSS organizado com variáveis, Flexbox e Grid responsivo, e um JavaScript limpo, com filtros acessíveis e modal de vídeo com <dialog>. Mas faltam itens que o roteiro exige literalmente: <table>, <img> estática no HTML, reset.css separado, os 4 estados de link (a:link, a:visited, a:active).
