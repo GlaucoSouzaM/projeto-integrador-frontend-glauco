@@ -283,6 +283,43 @@ function configurarPainelFiltros() {
     });
 }
 
+function configurarTema() {
+    const botaoTema = document.getElementById('botao-tema');
+    const textoTema = document.getElementById('texto-tema');
+    const raiz = document.documentElement;
+
+    function aplicarTema(modoEscuro) {
+        if (modoEscuro) {
+            raiz.setAttribute('data-tema', 'escuro');
+            if (botaoTema) {
+                botaoTema.setAttribute('aria-pressed', 'true');
+                botaoTema.setAttribute('aria-label', 'Alternar para modo claro');
+            }
+            if (textoTema) textoTema.textContent = 'Modo Claro';
+        } else {
+            raiz.removeAttribute('data-tema');
+            if (botaoTema) {
+                botaoTema.setAttribute('aria-pressed', 'false');
+                botaoTema.setAttribute('aria-label', 'Alternar para modo escuro');
+            }
+            if (textoTema) textoTema.textContent = 'Modo Escuro';
+        }
+    }
+
+    const temaSalvo = localStorage.getItem('tema');
+    aplicarTema(temaSalvo === 'escuro');
+
+    if (botaoTema) {
+        botaoTema.addEventListener('click', function () {
+            const ativo = raiz.getAttribute('data-tema') === 'escuro';
+            const novoModoEscuro = !ativo;
+            aplicarTema(novoModoEscuro);
+            localStorage.setItem('tema', novoModoEscuro ? 'escuro' : 'claro');
+        });
+    }
+}
+
+configurarTema();
 configurarPainelFiltros();
 
 const campoBusca = document.getElementById('busca-pontos');
